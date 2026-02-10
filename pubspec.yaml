@@ -1,0 +1,14 @@
+name: car_game
+description: Car racing game
+publish_to: "none"
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flame: ^1.18.0
+
+flutter:
+  uses-material-design: true
