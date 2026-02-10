@@ -1,7 +1,9 @@
-name: Build APK
+name: Android APK Build
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -19,5 +21,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: app-release-apk
+          name: apk
           path: build/app/outputs/flutter-apk/app-release.apk
